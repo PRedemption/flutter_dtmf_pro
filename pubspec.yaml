@@ -1,6 +1,6 @@
 name: flutter_dtmf_pro
 description: A modern Flutter plugin for generating DTMF tones with updated Gradle and Kotlin support.
-version: 1.0.0
+version: 2.0.2
 homepage: "https://redemptionincsoftwares.co.zw"
 repository: "https://github.com/PRedemption/flutter_dtmf_pro"
 
