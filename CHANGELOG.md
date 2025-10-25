@@ -1,46 +1,13 @@
-## 3.0.2
-* Revert Fix introduced in 3.0.1 which has been deleted in 3.0.2
-* Fix issue  : "AUDIO_OUTPUT_FLAG_FAST denied by server"
-* Added the option to force play sounds, even if DTMF sound are disabled in settings
-
-## 3.0.2
-* Fix Android Volume System Default
-
-## 3.0.1
-* Fix Android Tone Generator Crash at HF
-
-## 3.0.0
-* Add Volume Control
-* API Changes
-
-## 2.0.2
-* Android Gradle Upgrade
-
-## 2.0.1
-* Fix Kotlin Version
-
 ## 2.0.0
-* Breaking Changes
-* Package Rename (FlutterDmtf -> Dtmf)
-* Fix unknown char crash in Android
-
-## 1.0.2
-* Fix example
-
-## 1.0.1
-* Migrate to Null Safety
+- Migrated plugin to support **Gradle 9.1** and **Android Gradle Plugin 8.7+**.
+- Updated Kotlin to **1.9.24** and Java compatibility to **17**.
+- Replaced deprecated `lintOptions` with modern `lint {}` configuration.
+- Updated `compileSdk` to **34** and `minSdk` to **21**.
+- Added Android namespace 
+- Cleaned and modernized `build.gradle` with the new Gradle `plugins {}` DSL.
+- Improved overall Flutter plugin structure for long-term pub.dev compatibility.
+- Maintained the same API for backward compatibility with existing apps.
 
 ## 1.0.0
-* Add License and Major Version Name
-
-## 0.0.4
-* Ability to set tone duration
-
-## 0.0.3
-* Android Gradle Upgrade and AndroidX Support
-
-## 0.0.2
-* Adds Support for Android
-
-## 0.0.1
-* TODO: Describe initial release.
+- Initial release of the `flutter_dtmf` plugin.
+- Basic DTMF tone generation support for Android and iOS.
