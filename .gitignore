@@ -1,10 +1,47 @@
-.DS_Store
-.dart_tool/
+# -----------------------------
+# Flutter plugin .gitignore
+# -----------------------------
 
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Dart & Flutter build artifacts
+.dart_tool/
 .packages
 .pub/
-
 build/
+coverage/
+android/.gradle/
+android/build/
+ios/Pods/
+ios/.symlinks/
+example/build/
+example/.dart_tool/
+example/.pub/
+
+# IntelliJ / VS Code
+.idea/
+.vscode/
+*.iml
 
 # FVM Version Cache
 .fvm/
+
+# Avoid committing credentials or secrets
+*.keystore
+*.jks
+key.properties
+
+# -----------------------------
+# Files you SHOULD keep tracked:
+# -----------------------------
+# (Don't ignore these — pub.dev needs them)
+# android/src/
+# ios/Classes/
+# lib/
+# example/
+# pubspec.yaml
+# CHANGELOG.md
+# README.md
+

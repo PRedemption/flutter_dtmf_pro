@@ -1,9 +1,10 @@
 import 'dart:async';
 import 'dart:html' as html show window;
 
-import 'package:flutter_dtmf/dtmf_platform_interface.dart';
-import 'package:flutter_dtmf/models/dtmf.dart';
+
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
+
+import 'dtmf_platform_interface.dart';
 
 /// DtmfPlugin is the main plugin class
 class DtmfPlugin extends DtmfPlatform {
@@ -21,17 +22,31 @@ class DtmfPlugin extends DtmfPlatform {
     return version;
   }
 
+  // @override
+  // Future<bool> playTone(
+  //     {required String digits,
+  //     int? durationMs,
+  //     double? samplingRate,
+  //     double? volume}) async {
+  //   var dtmf = DTMF();
+  //   return await dtmf.playTone(
+  //       digits: digits,
+  //       durationMs: durationMs,
+  //       samplingRate: samplingRate,
+  //       volume: volume);
+  // }
   @override
-  Future<bool> playTone(
-      {required String digits,
-      int? durationMs,
-      double? samplingRate,
-      double? volume}) async {
-    var dtmf = DTMF();
-    return await dtmf.playTone(
-        digits: digits,
-        durationMs: durationMs,
-        samplingRate: samplingRate,
-        volume: volume);
-  }
+Future<bool> playTone({
+  required String digits,
+  int durationMs = 160,
+  bool forceMaxVolume = false,
+  bool ignoreDtmfSystemSettings = false,
+  double samplingRate = 44100.0,
+  double volume = 1.0,
+}) async {
+  // Implement or simulate DTMF playback on web
+  print("Playing DTMF tone: $digits");
+  return true;
+}
+
 }

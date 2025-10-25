@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_dtmf/dtmf_platform_interface.dart';
+import 'package:flutter_dtmf_pro/dtmf_platform_interface.dart';
 
 class MethodChannelDtmf extends DtmfPlatform {
   /// The method channel used to interact with the native platform.

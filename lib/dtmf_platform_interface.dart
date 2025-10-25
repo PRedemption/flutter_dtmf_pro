@@ -1,4 +1,4 @@
-import 'package:flutter_dtmf/dtmf_method_channel.dart';
+import 'package:flutter_dtmf_pro/dtmf_method_channel.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
 abstract class DtmfPlatform extends PlatformInterface {
@@ -6,7 +6,7 @@ abstract class DtmfPlatform extends PlatformInterface {
 
   static final Object _token = Object();
 
-  static DtmfPlatform _instance = MethodChannelDtmf();
+  static DtmfPlatform _instance = MethodChannelDtmf() as DtmfPlatform;
 
   /// The default instance of [DtmfPlatform] to use.
   ///

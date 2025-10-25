@@ -1,5 +1,6 @@
-import 'package:flutter_dtmf/models/tone.dart';
 import 'dart:js' as js;
+
+import 'package:flutter_dtmf_pro/models/tone.dart';
 
 class DTMF {
   var allFrequencies = {

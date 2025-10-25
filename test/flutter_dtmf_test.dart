@@ -1,7 +1,7 @@
+import 'package:flutter_dtmf_pro/flutter_dtmf.dart';
+import 'package:flutter_dtmf_pro/flutter_dtmf_method_channel.dart';
+import 'package:flutter_dtmf_pro/flutter_dtmf_platform_interface.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_dtmf/flutter_dtmf.dart';
-import 'package:flutter_dtmf/flutter_dtmf_platform_interface.dart';
-import 'package:flutter_dtmf/flutter_dtmf_method_channel.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
 class MockFlutterDtmfPlatform
